@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mailing System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/tailwind.css">
+    <link rel="stylesheet" href="dist/app.css">
+</head>
+<div>
+    <div class="search-box inline-flex">
+        <div class="search-box__input-wrap">
+            <div class="search-box__date-icon">
+                <svg>
+                    <use xlink:href="src/img/icons.svg#icon-calendar" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                </svg>
+            </div>
+            <div>
+                <input type="text" id="date-from" class="search-box__date-input form-control" placeholder="From">-
+                <input type="text" id="date-to" class="search-box__date-input form-control" placeholder="To">
+            </div>
+        </div>
+        <button class="search-box__submit-btn">
+            <svg>
+                <use xlink:href="src/img/icons.svg#icon-search" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+            </svg>
+        </button>
+    </div>
+    <p class="search-result-txt mt-6"></p>
+    <hr>
+    <div class="c-table">
+        <div class="c-table__head ">
+            <div class="c-table__th w-1/5" data-sort-by="from">From</div>
+            <div class="c-table__th w-1/4"> To</div>
+            <div class="c-table__th w-1/2"> Subject</div>
+            <div class="c-table__th w-1/10" data-sort-by="date"> Date</div>
+        </div>
+        <div class="c-table__body">
+        </div>
+        <div class="c-table__empty p-32 text-center ">
+            <img src="src/img/logo.png" class="inline-block">
+        </div>
+    </div>
+</div>
+<script src="src/js/script.js"></script>
+<script src="src/js/app.js"></script>
+</body>
+</html>
